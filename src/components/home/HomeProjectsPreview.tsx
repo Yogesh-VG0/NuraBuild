@@ -8,7 +8,7 @@ import { MapPin, ArrowRight, ArrowUpRight } from "lucide-react";
 
 export default function HomeProjectsPreview() {
   return (
-    <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+    <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <div>
@@ -18,7 +18,7 @@ export default function HomeProjectsPreview() {
               viewport={{ once: true }}
               className="text-[11px] font-bold tracking-[0.2em] text-accent uppercase"
             >
-              Project Concepts
+              Projects
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function HomeProjectsPreview() {
               <div className="relative h-52 overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={`${project.title} — concept project visual`}
+                  alt={`${project.title} — project photo`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -60,7 +60,7 @@ export default function HomeProjectsPreview() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent" />
                 <div className="absolute top-3 left-3">
                   <span className="px-2.5 py-0.5 bg-white/90 backdrop-blur-sm text-[10px] font-bold text-primary rounded tracking-wide uppercase">
-                    Concept
+                    {project.sector}
                   </span>
                 </div>
                 <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-white/90 text-xs">

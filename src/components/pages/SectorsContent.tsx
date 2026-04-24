@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function SectorsContent() {
   return (
-    <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+    <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
       <div className="max-w-7xl mx-auto space-y-12">
         {sectors.map((sector, i) => (
           <motion.div
@@ -23,7 +23,7 @@ export default function SectorsContent() {
               <div className={`relative h-56 lg:h-auto min-h-[220px] ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                 <Image
                   src={sector.image}
-                  alt={`${sector.title} sector concept`}
+                  alt={`${sector.title} — sector`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

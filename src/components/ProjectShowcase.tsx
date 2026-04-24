@@ -17,7 +17,7 @@ export default function ProjectShowcase() {
             viewport={{ once: true }}
             className="text-[11px] font-bold tracking-[0.2em] text-accent uppercase"
           >
-            Project Concepts
+            Projects
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export default function ProjectShowcase() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-[2.75rem] font-[family-name:var(--font-heading)] text-primary leading-tight mt-3 max-w-lg"
           >
-            Sample Project Presentations
+            Featured work &amp; case studies
           </motion.h2>
         </div>
         <motion.p
@@ -36,7 +36,8 @@ export default function ProjectShowcase() {
           transition={{ delay: 0.15 }}
           className="text-[13px] text-text-secondary max-w-xs"
         >
-          Fictional project scopes demonstrating how a contractor can present work clearly.
+          Representative scopes across residential, commercial, and light industrial
+          environments in the UAE.
         </motion.p>
       </div>
 
@@ -54,7 +55,7 @@ export default function ProjectShowcase() {
             <div className="relative h-52 overflow-hidden">
               <Image
                 src={project.image}
-                alt={`${project.title} — concept project visual`}
+                alt={`${project.title} — project photo`}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -62,7 +63,7 @@ export default function ProjectShowcase() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent" />
               <div className="absolute top-3 left-3 flex items-center gap-2">
                 <span className="px-2.5 py-0.5 bg-white/90 backdrop-blur-sm text-[10px] font-bold text-primary rounded tracking-wide uppercase">
-                  Concept
+                  {project.sector}
                 </span>
               </div>
               <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-white/90 text-xs">
@@ -93,7 +94,7 @@ export default function ProjectShowcase() {
                 href="#contact"
                 className="inline-flex items-center gap-1 text-[12px] font-semibold text-accent hover:text-accent-light transition-colors group/link"
               >
-                View concept scope
+                View project scope
                 <ArrowUpRight size={13} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </a>
             </div>

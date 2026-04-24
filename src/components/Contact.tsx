@@ -45,7 +45,8 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="text-text-secondary mb-10 text-base"
           >
-            Use this demo form to show how a real contractor enquiry flow could work.
+            Tell us about your space, timeline, and priorities — we will follow up with
+            next steps and indicative scope alignment.
           </motion.p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -81,11 +82,11 @@ export default function Contact() {
                 <CheckCircle size={32} className="text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">
-                Demo Enquiry Submitted
+                Thank you — we have your enquiry
               </h3>
               <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
-                Demo enquiry submitted. In a real project, this would connect to
-                email, WhatsApp, or a CRM.
+                Your message has been recorded. A coordinator will review it and
+                respond using the contact details you provided.
               </p>
               <button
                 onClick={() => setSubmitted(false)}

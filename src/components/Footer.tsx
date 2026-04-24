@@ -27,14 +27,15 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
-              Fictional contractor website concept for portfolio demonstration.
+              Renovation, fit-out, approvals, and site supervision for residential and
+              commercial clients across Dubai and Sharjah.
             </p>
-            <div className="flex gap-3">
-              <span className="px-3 py-1 border border-white/20 rounded-full text-xs text-white/50">
-                Demo Concept
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 border border-white/20 rounded-full text-xs text-white/70">
+                Dubai · UAE
               </span>
-              <span className="px-3 py-1 border border-white/20 rounded-full text-xs text-white/50">
-                Not a Real Company
+              <span className="px-3 py-1 border border-white/20 rounded-full text-xs text-white/70">
+                Structured scope &amp; handover
               </span>
             </div>
           </div>
@@ -58,10 +59,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Project Concepts */}
+          {/* Projects */}
           <div>
             <h4 className="text-sm font-semibold mb-4 text-white/80 uppercase tracking-wider">
-              Project Concepts
+              Projects
             </h4>
             <ul className="space-y-2.5">
               {footerLinks.projects.map((link) => (
@@ -101,11 +102,10 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40 text-center md:text-left">
-              &copy;&nbsp;{currentYear}&nbsp;NuraBuild Contracting&nbsp;&mdash;&nbsp;Fictional portfolio
-              demo. Not affiliated with any real company. Built by Yogesh Vadivel.
+              &copy;&nbsp;{currentYear}&nbsp;NuraBuild Contracting. All rights reserved.
             </p>
-            <p className="text-xs text-white/30">
-              All images sourced from Pexels under free license.
+            <p className="text-xs text-white/30 text-center md:text-right">
+              Photography via Pexels. Site design &amp; development: Yogesh Vadivel.
             </p>
           </div>
         </div>

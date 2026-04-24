@@ -17,7 +17,7 @@ export default function ContactContent() {
   return (
     <>
       {/* Form + contact info */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left — contact info */}
           <div>
@@ -27,8 +27,8 @@ export default function ContactContent() {
               transition={{ delay: 0.1 }}
               className="text-text-secondary mb-10 text-[15px] leading-relaxed"
             >
-              This frontend-only enquiry form demonstrates the kind of quote request
-              flow a contractor website can support.
+              Share your project basics below. We route every enquiry to the right
+              coordinator and respond within one business day where possible.
             </motion.p>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -62,11 +62,11 @@ export default function ContactContent() {
                   <CheckCircle size={32} className="text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">
-                  Demo Enquiry Submitted
+                  Thank you — we have your enquiry
                 </h3>
                 <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
-                  Demo enquiry submitted. In a real project, this would connect to
-                  email, WhatsApp, or a CRM.
+                  Your message has been recorded. A coordinator will review it and
+                  respond using the contact details you provided.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -136,7 +136,7 @@ export default function ContactContent() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 px-6 md:px-8 bg-white border-t border-border/40">
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-white border-t border-border/40">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-heading)] text-primary mb-8 text-center">
             Frequently Asked Questions

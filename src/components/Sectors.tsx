@@ -24,7 +24,7 @@ export default function Sectors() {
         transition={{ delay: 0.1 }}
         className="text-3xl md:text-4xl lg:text-[2.75rem] font-[family-name:var(--font-heading)] text-primary leading-tight mt-3 mb-12"
       >
-        Spaces the Concept Can Support
+        Sectors we support
       </motion.h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -39,7 +39,7 @@ export default function Sectors() {
           >
             <Image
               src={sector.image}
-              alt={`${sector.title} sector concept`}
+              alt={`${sector.title} — sector`}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

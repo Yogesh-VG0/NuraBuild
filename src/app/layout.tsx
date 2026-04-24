@@ -17,23 +17,36 @@ const libreBaskerville = Libre_Baskerville({
   display: "swap",
 });
 
+const siteDescription =
+  "NuraBuild Contracting delivers villa renovation, commercial fit-out, approval support, and site supervision across Dubai and the UAE.";
+
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000")
+);
+
 export const metadata: Metadata = {
+  metadataBase,
   title: {
-    default: "NuraBuild Contracting | UAE Contractor Website Demo",
+    default: "NuraBuild Contracting | UAE Renovation & Fit-Out",
     template: "%s | NuraBuild Contracting",
   },
-  description:
-    "Fictional UAE contracting, renovation, and fit-out company website concept. A portfolio demo by Yogesh Vadivel.",
+  description: siteDescription,
   openGraph: {
-    title: "NuraBuild Contracting | UAE Contractor Website Demo",
-    description:
-      "Fictional UAE contracting, renovation, and fit-out company website concept. A portfolio demo by Yogesh Vadivel.",
+    title: "NuraBuild Contracting | UAE Renovation & Fit-Out",
+    description: siteDescription,
     type: "website",
     locale: "en_AE",
+    siteName: "NuraBuild Contracting",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NuraBuild Contracting | UAE Renovation & Fit-Out",
+    description: siteDescription,
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

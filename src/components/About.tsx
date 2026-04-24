@@ -45,9 +45,8 @@ export default function About() {
             transition={{ delay: 0.2 }}
             className="text-text-secondary leading-relaxed mb-8 text-[15px]"
           >
-            A fictional UAE contractor concept built around clarity, coordination,
-            and professional project presentation — demonstrating how a contractor
-            can explain services, scope, and enquiry flow with confidence.
+            We focus on clarity, coordination, and predictable delivery so owners
+            and tenants understand scope, milestones, and handover from day one.
           </motion.p>
 
           <div className="grid sm:grid-cols-2 gap-5">

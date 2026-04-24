@@ -8,7 +8,7 @@ import { MapPin, ArrowUpRight } from "lucide-react";
 
 export default function ProjectsListing() {
   return (
-    <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+    <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, i) => (
@@ -24,7 +24,7 @@ export default function ProjectsListing() {
                 <div className="relative h-56 overflow-hidden">
                   <Image
                     src={project.image}
-                    alt={`${project.title} — concept project visual`}
+                    alt={`${project.title} — project photo`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -32,7 +32,7 @@ export default function ProjectsListing() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent" />
                   <div className="absolute top-3 left-3">
                     <span className="px-2.5 py-0.5 bg-white/90 backdrop-blur-sm text-[10px] font-bold text-primary rounded tracking-wide uppercase">
-                      Concept Project
+                      {project.sector}
                     </span>
                   </div>
                   <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-white/90 text-xs">

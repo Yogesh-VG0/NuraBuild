@@ -10,7 +10,7 @@ export default function AboutContent() {
   return (
     <>
       {/* Company positioning */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function AboutContent() {
       </section>
 
       {/* Values */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-white">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export default function AboutContent() {
       </section>
 
       {/* Project approach / process */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -123,10 +123,11 @@ export default function AboutContent() {
       </section>
 
       {/* Disclaimer + CTA */}
-      <section className="py-16 px-6 md:px-8 bg-white border-t border-border/40">
+      <section className="py-16 px-4 sm:px-6 md:px-8 bg-white border-t border-border/40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-xs text-text-secondary max-w-lg">
-            NuraBuild Contracting is a fictional website concept. No real company, client, or project is represented. Created for portfolio demonstration purposes.
+            Ready to scope your renovation or fit-out? Share your programme, drawings
+            if available, and we will structure the next conversation around your priorities.
           </p>
           <Link
             href="/contact"

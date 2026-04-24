@@ -5,7 +5,8 @@ import ContactContent from "@/components/pages/ContactContent";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Request a project quote from NuraBuild Contracting. Frontend-only enquiry form for demonstration purposes.",
+  description:
+    "Request a project quote from NuraBuild Contracting — villa renovation, fit-out, approvals, and supervision across Dubai and Sharjah.",
 };
 
 export default function ContactPage() {

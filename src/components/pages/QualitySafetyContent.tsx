@@ -9,7 +9,7 @@ export default function QualitySafetyContent() {
   return (
     <>
       {/* Quality items full detail */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-noise">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-noise">
         <div className="max-w-7xl mx-auto space-y-12">
           {qualityItems.map((item, i) => (
             <motion.div
@@ -43,7 +43,7 @@ export default function QualitySafetyContent() {
       </section>
 
       {/* Communication & documentation */}
-      <section className="py-20 md:py-24 px-6 md:px-8 bg-white">
+      <section className="py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export default function QualitySafetyContent() {
       </section>
 
       {/* Process reminder */}
-      <section className="py-16 md:py-20 px-6 md:px-8 bg-primary">
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-primary">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-heading)] text-white mb-10">
             Our Project Flow
@@ -101,7 +101,7 @@ export default function QualitySafetyContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 md:px-8 bg-noise border-t border-border/40">
+      <section className="py-16 px-4 sm:px-6 md:px-8 bg-noise border-t border-border/40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-xl font-[family-name:var(--font-heading)] text-primary mb-2">

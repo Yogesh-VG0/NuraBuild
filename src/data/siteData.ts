@@ -186,7 +186,7 @@ export const projects = [
     slug: "jumeirah-villa-renovation",
     title: "Jumeirah Villa Renovation",
     location: "Dubai, UAE",
-    type: "Concept Project",
+    type: "Featured work",
     sector: "Residential",
     sampleScale: "320 sqm",
     scope: "Layout refinement, interior upgrades, finishing coordination",
@@ -208,7 +208,7 @@ export const projects = [
     slug: "business-bay-office-fit-out",
     title: "Business Bay Office Fit-Out",
     location: "Dubai, UAE",
-    type: "Concept Project",
+    type: "Featured work",
     sector: "Commercial",
     sampleScale: "480 sqm",
     scope: "Workspace planning, partitions, lighting, finishes",
@@ -230,7 +230,7 @@ export const projects = [
     slug: "al-quoz-warehouse-upgrade",
     title: "Al Quoz Warehouse Upgrade",
     location: "Dubai, UAE",
-    type: "Concept Project",
+    type: "Featured work",
     sector: "Industrial",
     sampleScale: "750 sqm",
     scope: "Utility planning, surface upgrades, supervision",
@@ -358,27 +358,27 @@ export const projectTypes = [
 
 export const contactInfo = [
   { icon: Phone, label: "WhatsApp", value: "+971 00 000 0000" },
-  { icon: Mail, label: "Email", value: "enquiries@nurabuild-demo.com" },
+  { icon: Mail, label: "Email", value: "enquiries@nurabuild.ae" },
   { icon: MapPin, label: "Coverage", value: "Dubai & Sharjah, UAE" },
   { icon: Clock, label: "Response", value: "Within 24 hours" },
 ];
 
 export const contactFaq = [
   {
-    q: "Is NuraBuild a real company?",
-    a: "No. NuraBuild Contracting is a fictional website concept created for portfolio demonstration purposes. No real company or client is represented.",
+    q: "Which areas do you cover?",
+    a: "We coordinate residential and commercial projects across Dubai and Sharjah, with regional support for wider UAE and Gulf coordination where required.",
   },
   {
-    q: "Can this form send real emails?",
-    a: "This is a frontend-only demo. In a real project, the form would connect to email, WhatsApp, or a CRM system.",
+    q: "How quickly will you respond?",
+    a: "We aim to reply to enquiries within one business day. Urgent site matters are triaged on the same day when you flag them in your message.",
   },
   {
-    q: "Are the project cards real projects?",
-    a: "No. All projects shown are fictional concept scopes created to demonstrate how a contractor can present project information clearly.",
+    q: "What project sizes do you take on?",
+    a: "From single-room refreshes to full villa renovations and multi-zone office fit-outs. Share your approximate area and timeline for a tailored discussion.",
   },
   {
-    q: "Who built this demo?",
-    a: "This website was designed and built by Yogesh Vadivel as a portfolio demonstration piece.",
+    q: "Do you handle authority approvals?",
+    a: "Yes. We support drawing coordination, documentation, and submissions for common Dubai and Sharjah approval paths as part of a structured scope.",
   },
 ];
 
@@ -392,9 +392,9 @@ export const footerLinks = {
     { label: "Site Supervision", href: "/services" },
   ],
   projects: [
-    { label: "Jumeirah Villa Concept", href: "/projects/jumeirah-villa-renovation" },
-    { label: "Business Bay Office Concept", href: "/projects/business-bay-office-fit-out" },
-    { label: "Al Quoz Warehouse Concept", href: "/projects/al-quoz-warehouse-upgrade" },
+    { label: "Jumeirah Villa Renovation", href: "/projects/jumeirah-villa-renovation" },
+    { label: "Business Bay Office Fit-Out", href: "/projects/business-bay-office-fit-out" },
+    { label: "Al Quoz Warehouse Upgrade", href: "/projects/al-quoz-warehouse-upgrade" },
   ],
   company: [
     { label: "About", href: "/about" },
@@ -430,7 +430,18 @@ export const coverageRoutes: CoverageRoute[] = [
     focus: ["Villa renovation", "Commercial fit-out", "Supervision"],
     primary: true,
     showOnMap: true,
-    note: "Fictional demo route",
+    note: "Regional hub",
+  },
+  {
+    id: "abu-dhabi",
+    city: "Abu Dhabi",
+    country: "UAE",
+    lat: 24.4539,
+    lng: 54.3773,
+    type: "GCC enquiry route",
+    focus: ["Commercial fit-out", "Authority coordination"],
+    showOnMap: true,
+    note: "Regional hub",
   },
   {
     id: "riyadh",
@@ -441,7 +452,18 @@ export const coverageRoutes: CoverageRoute[] = [
     type: "GCC enquiry route",
     focus: ["Commercial fit-out", "Contractor coordination"],
     showOnMap: true,
-    note: "Fictional demo route",
+    note: "Regional hub",
+  },
+  {
+    id: "jeddah",
+    city: "Jeddah",
+    country: "Saudi Arabia",
+    lat: 21.4858,
+    lng: 39.1925,
+    type: "GCC enquiry route",
+    focus: ["Fit-out enquiries", "Regional documentation"],
+    showOnMap: true,
+    note: "Regional hub",
   },
   {
     id: "doha",
@@ -451,8 +473,8 @@ export const coverageRoutes: CoverageRoute[] = [
     lng: 51.531,
     type: "GCC enquiry route",
     focus: ["Office fit-out", "Retail fit-out enquiries"],
-    showOnMap: true,
-    note: "Fictional demo route",
+    showOnMap: false,
+    note: "Regional hub",
   },
   {
     id: "cairo",
@@ -462,8 +484,8 @@ export const coverageRoutes: CoverageRoute[] = [
     lng: 31.2357,
     type: "MENA enquiry route",
     focus: ["Regional contracting", "Documentation enquiries"],
-    showOnMap: true,
-    note: "Fictional demo route",
+    showOnMap: false,
+    note: "Regional hub",
   },
   {
     id: "mumbai",
@@ -473,8 +495,8 @@ export const coverageRoutes: CoverageRoute[] = [
     lng: 72.8777,
     type: "Supplier / design coordination route",
     focus: ["Materials", "Drawings", "Procurement"],
-    showOnMap: true,
-    note: "Fictional demo route",
+    showOnMap: false,
+    note: "Regional hub",
   },
   {
     id: "london",
@@ -484,8 +506,8 @@ export const coverageRoutes: CoverageRoute[] = [
     lng: -0.1278,
     type: "International client enquiry route",
     focus: ["Overseas owner enquiries", "UAE property projects"],
-    showOnMap: true,
-    note: "Fictional demo route",
+    showOnMap: false,
+    note: "Regional hub",
   },
   {
     id: "singapore",
@@ -495,10 +517,13 @@ export const coverageRoutes: CoverageRoute[] = [
     lng: 103.8198,
     type: "Asia coordination route",
     focus: ["Supplier discussions", "Project documentation"],
-    showOnMap: true,
-    note: "Fictional demo route",
+    showOnMap: false,
+    note: "Regional hub",
   },
 ];
+
+/** Gulf hub cities shown on the regional map. */
+export const gulfMapRouteOrder = ["dubai", "abu-dhabi", "riyadh", "jeddah"] as const;
 
 /* ───── Images ───── */
 

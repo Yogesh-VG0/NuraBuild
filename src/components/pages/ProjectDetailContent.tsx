@@ -29,14 +29,14 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
         <div className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
           <Image
             src={project.image}
-            alt={`${project.title} — concept project visual`}
+            alt={`${project.title} — hero`}
             fill
             className="object-cover"
             sizes="100vw"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-primary/10" />
-          <div className="absolute bottom-0 left-0 right-0 px-6 md:px-8 pb-8">
+          <div className="absolute bottom-0 left-0 right-0 px-4 sm:px-6 md:px-8 pb-8">
             <div className="max-w-7xl mx-auto">
               <span className="inline-block px-2.5 py-0.5 bg-white/90 backdrop-blur-sm text-[10px] font-bold text-primary rounded tracking-wide uppercase mb-3">
                 {project.type}
@@ -51,7 +51,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
 
       {/* Project info bar */}
       <section className="bg-white border-b border-border/40">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-5">
           <div className="flex flex-wrap gap-6 text-sm text-text-secondary">
             <div className="flex items-center gap-1.5">
               <MapPin size={14} className="text-accent" />
@@ -63,14 +63,14 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
             </div>
             <div className="flex items-center gap-1.5">
               <Ruler size={14} className="text-accent" />
-              Sample scale: {project.sampleScale}
+              Approx. area: {project.sampleScale}
             </div>
           </div>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-20 px-6 md:px-8 bg-noise">
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-noise">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
             {/* Main content */}
@@ -141,9 +141,10 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
               </div>
 
               <div className="bg-white rounded-xl border border-border/40 p-6">
-                <h3 className="text-sm font-semibold text-primary mb-3">Project Status</h3>
+                <h3 className="text-sm font-semibold text-primary mb-3">Engagement</h3>
                 <p className="text-[13px] text-text-secondary">
-                  This is a fictional project scope created for demonstration purposes. No real project or client is represented.
+                  Representative scope for planning and budgeting. Final packages are
+                  tailored after site review and authority checks.
                 </p>
               </div>
 

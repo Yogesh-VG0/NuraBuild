@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-[1] blueprint-grid opacity-60 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-8 w-full pt-28 pb-20 md:pt-32 md:pb-28">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 w-full pt-28 pb-20 md:pt-32 md:pb-28">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left column — copy */}
           <div className="lg:col-span-7">
@@ -41,7 +41,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-accent/8 border border-accent/15 rounded text-[11px] font-semibold text-accent uppercase tracking-[0.15em] mb-5">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                Fictional Demo Concept
+                UAE contracting &amp; fit-out
               </span>
             </motion.div>
 
@@ -71,8 +71,8 @@ export default function Hero() {
               className="text-base md:text-lg text-text-secondary leading-relaxed mb-8 max-w-lg"
             >
               Residential renovation, commercial fit-out, approval coordination, and
-              site supervision — presented through a clear, professional digital
-              experience.
+              site supervision — delivered with clear communication from first enquiry
+              to handover.
             </motion.p>
 
             <motion.div
@@ -92,7 +92,7 @@ export default function Hero() {
                 href="/projects"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-primary/20 text-primary text-sm font-semibold tracking-wide rounded hover:border-accent hover:text-accent transition-all"
               >
-                View Project Concepts
+                View projects
               </Link>
             </motion.div>
           </div>
@@ -106,8 +106,8 @@ export default function Hero() {
           >
             <div className="bg-white/85 backdrop-blur-md border border-border/60 rounded-xl p-6 shadow-xl">
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-accent uppercase">Sample Project Scope</span>
-                <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent font-semibold rounded">Concept</span>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-accent uppercase">Featured scope</span>
+                <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent font-semibold rounded">Residential</span>
               </div>
               <h3 className="text-lg font-bold text-primary mb-1 font-[family-name:var(--font-heading)]">
                 Jumeirah Villa Renovation
@@ -130,7 +130,7 @@ export default function Hero() {
                   <span>~320 sqm</span>
                 </div>
                 <Link href="/projects" className="text-xs font-semibold text-accent hover:text-accent-light transition-colors">
-                  View all concepts →
+                  View all projects →
                 </Link>
               </div>
             </div>

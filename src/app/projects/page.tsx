@@ -5,16 +5,17 @@ import ProjectsListing from "@/components/pages/ProjectsListing";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Fictional concept project scopes for villa renovation, office fit-out, and warehouse upgrades in Dubai.",
+  description:
+    "Explore representative villa, office, and warehouse scopes delivered by NuraBuild Contracting across Dubai and the UAE.",
 };
 
 export default function ProjectsPage() {
   return (
     <>
       <PageHero
-        label="Project Concepts"
-        title="Sample Project Presentations"
-        subtitle="Fictional project scopes demonstrating how a contractor can present work clearly and professionally."
+        label="Projects"
+        title="Featured work & case studies"
+        subtitle="Representative scopes across residential, commercial, and light industrial environments."
       />
       <Breadcrumbs items={[{ label: "Projects" }]} />
       <ProjectsListing />

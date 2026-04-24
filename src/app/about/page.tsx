@@ -5,7 +5,8 @@ import AboutContent from "@/components/pages/AboutContent";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About NuraBuild Contracting — a fictional UAE contractor concept focused on renovation, fit-out, and project coordination.",
+  description:
+    "Learn how NuraBuild Contracting approaches renovation, commercial fit-out, approvals, and site supervision across the UAE.",
 };
 
 export default function AboutPage() {

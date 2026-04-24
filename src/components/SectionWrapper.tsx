@@ -23,7 +23,7 @@ export default function SectionWrapper({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className={`py-20 md:py-24 px-6 md:px-8 ${
+      className={`py-20 md:py-24 px-4 sm:px-6 md:px-8 ${
         dark ? "bg-primary text-white" : ""
       } ${className}`}
     >

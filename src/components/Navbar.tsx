@@ -41,7 +41,7 @@ export default function Navbar() {
           : "bg-gradient-to-b from-black/30 to-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-16 md:h-[72px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between h-16 md:h-[72px]">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <LogoMark

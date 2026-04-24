@@ -10,7 +10,7 @@ interface PageHeroProps {
 
 export default function PageHero({ label, title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative pt-28 pb-16 md:pt-32 md:pb-20 px-6 md:px-8 bg-primary overflow-hidden">
+    <section className="relative pt-28 pb-16 md:pt-32 md:pb-20 px-4 sm:px-6 md:px-8 bg-primary overflow-hidden">
       <div className="absolute inset-0 blueprint-grid opacity-30 pointer-events-none" />
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.span

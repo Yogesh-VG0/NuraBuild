@@ -498,17 +498,6 @@ export const coverageRoutes: CoverageRoute[] = [
     showOnMap: true,
     note: "Fictional demo route",
   },
-  {
-    id: "sydney",
-    city: "Sydney",
-    country: "Australia",
-    lat: -33.8688,
-    lng: 151.2093,
-    type: "Overseas client enquiry route",
-    focus: ["UAE property owner enquiries"],
-    showOnMap: true,
-    note: "Fictional demo route",
-  },
 ];
 
 /* ───── Images ───── */

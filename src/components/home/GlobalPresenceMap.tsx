@@ -5,8 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import DottedMap from "dotted-map";
 import { coverageRoutes, type CoverageRoute } from "@/data/siteData";
 
-/* ─── EMEA / APAC crop bounds (SVG coordinate space) ─── */
-const CROP = { xMin: 44, yMin: 3, w: 62, h: 42 } as const;
+/* ─── EMEA + Asia crop bounds (SVG coords, no Americas or Australia) ─── */
+const CROP = { xMin: 45, yMin: 4, w: 50, h: 28 } as const;
+
+/* ─── Per-marker label offsets to prevent overlap in Gulf cluster ─── */
+const LABEL_POS: Record<string, { dx: number; dy: number; anchor: "start" | "middle" | "end" }> = {
+  dubai:     { dx: 1.8,  dy: 0.4,  anchor: "start" },
+  riyadh:    { dx: -1.2, dy: 0.5,  anchor: "end" },
+  doha:      { dx: 0,    dy: 2,    anchor: "middle" },
+  cairo:     { dx: 0,    dy: -1.3, anchor: "middle" },
+  london:    { dx: 1.5,  dy: 0.2,  anchor: "start" },
+  mumbai:    { dx: 0,    dy: -1.3, anchor: "middle" },
+  singapore: { dx: 0,    dy: -1.3, anchor: "middle" },
+};
 
 /* ─── Types ─── */
 interface MarkerPos {
@@ -182,8 +193,8 @@ export default function GlobalPresenceMap() {
             transition={{ delay: 0.15 }}
             className="text-white/35 text-sm mt-2 max-w-xl mx-auto"
           >
-            Fictional enquiry routes across the Gulf, Europe, Africa, Asia, and
-            Australia — no real offices or completed projects implied.
+            Fictional enquiry routes across the Gulf, Europe, Africa, and
+            Asia — no real offices or completed projects implied.
           </motion.p>
         </div>
 
@@ -215,7 +226,7 @@ export default function GlobalPresenceMap() {
               viewBox={vb}
               className="w-full h-auto relative z-10"
               role="img"
-              aria-label="Dotted EMEA and Asia-Pacific map showing sample enquiry routes"
+              aria-label="Dotted EMEA and Asia map showing sample enquiry routes"
             >
               {/* Base land dots */}
               {baseDots.map((dot, i) => (
@@ -306,18 +317,23 @@ export default function GlobalPresenceMap() {
                       }}
                     />
 
-                    <text
-                      x={m.x}
-                      y={m.y - 1.2}
-                      textAnchor="middle"
-                      fill={isPrimary ? "#B88746" : "rgba(255,255,255,0.3)"}
-                      fontSize={isPrimary ? 1.4 : 1.05}
-                      fontWeight={isPrimary ? 700 : 500}
-                      fontFamily="var(--font-body), system-ui, sans-serif"
-                      className="select-none pointer-events-none"
-                    >
-                      {route?.city}
-                    </text>
+                    {(() => {
+                      const lp = LABEL_POS[m.id] ?? { dx: 0, dy: -1.3, anchor: "middle" as const };
+                      return (
+                        <text
+                          x={m.x + lp.dx}
+                          y={m.y + lp.dy}
+                          textAnchor={lp.anchor}
+                          fill={isPrimary ? "#B88746" : "rgba(255,255,255,0.3)"}
+                          fontSize={isPrimary ? 1.4 : 1}
+                          fontWeight={isPrimary ? 700 : 500}
+                          fontFamily="var(--font-body), system-ui, sans-serif"
+                          className="select-none pointer-events-none"
+                        >
+                          {route?.city}
+                        </text>
+                      );
+                    })()}
                   </g>
                 );
               })}

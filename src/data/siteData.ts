@@ -404,6 +404,124 @@ export const footerLinks = {
   ],
 };
 
+/* ───── Coverage Routes ───── */
+
+export interface CoverageRoute {
+  id: string;
+  city: string;
+  country: string;
+  lat: number;
+  lng: number;
+  type: string;
+  focus: string[];
+  primary?: boolean;
+  showOnMap: boolean;
+  note: string;
+}
+
+export const coverageRoutes: CoverageRoute[] = [
+  {
+    id: "dubai",
+    city: "Dubai",
+    country: "UAE",
+    lat: 25.2048,
+    lng: 55.2708,
+    type: "Primary enquiry base",
+    focus: ["Villa renovation", "Commercial fit-out", "Supervision"],
+    primary: true,
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+  {
+    id: "abu-dhabi",
+    city: "Abu Dhabi",
+    country: "UAE",
+    lat: 24.4539,
+    lng: 54.3773,
+    type: "UAE enquiry route",
+    focus: ["Residential enquiries", "Commercial enquiries"],
+    showOnMap: false,
+    note: "Fictional demo route",
+  },
+  {
+    id: "sharjah",
+    city: "Sharjah",
+    country: "UAE",
+    lat: 25.3463,
+    lng: 55.4209,
+    type: "UAE enquiry route",
+    focus: ["Fit-out enquiries", "Refurbishment enquiries"],
+    showOnMap: false,
+    note: "Fictional demo route",
+  },
+  {
+    id: "riyadh",
+    city: "Riyadh",
+    country: "Saudi Arabia",
+    lat: 24.7136,
+    lng: 46.6753,
+    type: "GCC enquiry route",
+    focus: ["Commercial fit-out", "Contractor coordination"],
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+  {
+    id: "doha",
+    city: "Doha",
+    country: "Qatar",
+    lat: 25.2854,
+    lng: 51.531,
+    type: "GCC enquiry route",
+    focus: ["Office fit-out", "Retail fit-out enquiries"],
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+  {
+    id: "muscat",
+    city: "Muscat",
+    country: "Oman",
+    lat: 23.588,
+    lng: 58.3829,
+    type: "GCC enquiry route",
+    focus: ["Renovation enquiries", "Supervision enquiries"],
+    showOnMap: false,
+    note: "Fictional demo route",
+  },
+  {
+    id: "mumbai",
+    city: "Mumbai",
+    country: "India",
+    lat: 19.076,
+    lng: 72.8777,
+    type: "Supplier / design coordination route",
+    focus: ["Materials", "Drawings", "Procurement coordination"],
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+  {
+    id: "london",
+    city: "London",
+    country: "United Kingdom",
+    lat: 51.5074,
+    lng: -0.1278,
+    type: "International client enquiry route",
+    focus: ["Overseas owner enquiries", "UAE property projects"],
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+  {
+    id: "cairo",
+    city: "Cairo",
+    country: "Egypt",
+    lat: 30.0444,
+    lng: 31.2357,
+    type: "MENA enquiry route",
+    focus: ["Regional contracting", "Documentation enquiries"],
+    showOnMap: true,
+    note: "Fictional demo route",
+  },
+];
+
 /* ───── Images ───── */
 
 export const heroImage = "https://images.pexels.com/photos/6285158/pexels-photo-6285158.jpeg?auto=compress&cs=tinysrgb&w=1260";

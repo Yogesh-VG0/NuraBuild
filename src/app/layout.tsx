@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
   variable: "--font-body",
@@ -16,13 +18,16 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "NuraBuild Contracting | Fictional UAE Contractor Website Demo",
+  title: {
+    default: "NuraBuild Contracting | UAE Contractor Website Demo",
+    template: "%s | NuraBuild Contracting",
+  },
   description:
-    "A premium light-mode fictional UAE contractor, renovation, and fit-out website concept built as a portfolio demo by Yogesh Vadivel.",
+    "Fictional UAE contracting, renovation, and fit-out company website concept. A portfolio demo by Yogesh Vadivel.",
   openGraph: {
-    title: "NuraBuild Contracting | Fictional UAE Contractor Website Demo",
+    title: "NuraBuild Contracting | UAE Contractor Website Demo",
     description:
-      "A premium light-mode fictional UAE contractor, renovation, and fit-out website concept built as a portfolio demo by Yogesh Vadivel.",
+      "Fictional UAE contracting, renovation, and fit-out company website concept. A portfolio demo by Yogesh Vadivel.",
     type: "website",
     locale: "en_AE",
   },
@@ -43,7 +48,9 @@ export default function RootLayout({
       className={`${manrope.variable} ${libreBaskerville.variable} antialiased`}
     >
       <body className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] overflow-x-hidden">
-        {children}
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

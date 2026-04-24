@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { footerLinks } from "../data/siteData";
 import LogoMark from "./LogoMark";
 
@@ -46,12 +47,12 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-white/50 hover:text-accent transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -65,12 +66,12 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.projects.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-white/50 hover:text-accent transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -84,12 +85,12 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-white/50 hover:text-accent transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,7 +105,7 @@ export default function Footer() {
               demo. Not affiliated with any real company. Built by Yogesh Vadivel.
             </p>
             <p className="text-xs text-white/30">
-              All images sourced from Pexels / Unsplash under free license.
+              All images sourced from Pexels under free license.
             </p>
           </div>
         </div>

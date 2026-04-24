@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { heroImage } from "../data/siteData";
 import { ArrowRight, MapPin, Ruler, CheckCircle2 } from "lucide-react";
 
@@ -80,19 +81,19 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="flex flex-col sm:flex-row gap-3"
             >
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-primary/90 transition-all hover:shadow-xl group"
               >
                 Request a Quote
                 <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform" />
-              </a>
-              <a
-                href="#projects"
+              </Link>
+              <Link
+                href="/projects"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-primary/20 text-primary text-sm font-semibold tracking-wide rounded hover:border-accent hover:text-accent transition-all"
               >
                 View Project Concepts
-              </a>
+              </Link>
             </motion.div>
           </div>
 
@@ -128,9 +129,9 @@ export default function Hero() {
                   <Ruler size={12} />
                   <span>~320 sqm</span>
                 </div>
-                <a href="#projects" className="text-xs font-semibold text-accent hover:text-accent-light transition-colors">
+                <Link href="/projects" className="text-xs font-semibold text-accent hover:text-accent-light transition-colors">
                   View all concepts →
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>

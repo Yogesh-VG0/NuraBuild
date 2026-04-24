@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
@@ -27,13 +28,13 @@ export default function CTA() {
           Start with a clear enquiry and a structured project conversation.
         </p>
 
-        <a
-          href="#contact"
+        <Link
+          href="/contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-sm font-semibold rounded-md hover:bg-primary/90 transition-all hover:shadow-xl relative z-10 group"
         >
           Request a Quote
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

@@ -2,11 +2,28 @@
 
 > **⚠️ DISCLAIMER:** This is a **fictional website concept** created for portfolio demonstration purposes. NuraBuild Contracting is **not a real company**. No real clients, projects, testimonials, awards, or company affiliations are represented.
 
+## Live Demo
+
+**https://nurabuild.vercel.app/**
+
 ## About
 
-A premium, light-mode fictional UAE contracting / fit-out / engineering support company website demo. This project showcases how a professional contractor business website can be structured, designed, and built using modern frontend technologies.
+A multi-page, premium light-mode fictional UAE contracting / fit-out / renovation company website. Built as a professional demonstration of how a contractor business can present its services, project scopes, and enquiry flow using modern frontend technologies.
 
 **Built by Yogesh Vadivel** as a portfolio demonstration piece.
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Homepage with hero, capability strip, service/project/quality previews |
+| `/about` | Company profile, values, and project approach |
+| `/services` | Detailed service listings with scope tags and inclusions |
+| `/projects` | Fictional concept project cards |
+| `/projects/[slug]` | Individual project scope detail pages |
+| `/sectors` | Residential, apartment, office, and industrial sectors |
+| `/quality-safety` | Quality assurance, safety coordination, and handover process |
+| `/contact` | Enquiry form, contact info, and FAQ |
 
 ## Tech Stack
 
@@ -16,27 +33,35 @@ A premium, light-mode fictional UAE contracting / fit-out / engineering support 
 - **Animations:** Framer Motion
 - **Icons:** Lucide React
 - **Images:** next/image with remote Pexels stock photos
-- **Fonts:** DM Serif Display (headings) + Inter (body) via next/font/google
+- **Fonts:** Libre Baskerville (headings) + Manrope (body) via next/font/google
 - **Deployment:** Vercel-ready (no backend, no database, no env vars needed)
+
+## Design
+
+- Light-mode warm stone background (#FAF7F2)
+- Deep navy text (#0F2433) and bronze accent (#B88746)
+- Geometric SVG logo mark
+- Blueprint grid and noise texture overlays
+- Consistent page hero banners with breadcrumbs
+- Active nav state indicators
+- Framer Motion page reveals with reduced-motion support
 
 ## Features
 
-- Sticky navbar with mobile hamburger menu and smooth anchor scrolling
-- Premium hero section with floating capability cards and gradient overlay
-- Capability trust strip with icon cards
-- About section with split layout (text + image)
-- 6-service card grid with hover animations
-- 3 fictional project concept cards (clearly labeled as concepts)
-- 4 sector showcase cards with image overlays
-- Quality & safety section with concept-level capability language
-- Large statement/quote section with bronze accents
-- 5-step project process timeline
-- CTA band
-- Contact form with project type dropdown and demo submission flow
+- Multi-page Next.js App Router with per-page metadata
+- Sticky navbar with mobile menu and active route highlighting
+- Premium hero section with blueprint grid and architectural spec card
+- Capability trust strip with numbered badges
+- Numbered service listings with scope tags and "what this includes" detail
+- 3 fictional project concept cards with detail pages (clearly labeled as concepts)
+- 4 sector cards with relevant services and example scopes
+- Quality & safety detail with communication and handover sections
+- Statement quote section
+- Frontend-only enquiry form with project type dropdown and demo submission
+- Contact FAQ section
 - Professional footer with fictional disclaimer
 - Full SEO metadata and Open Graph tags
 - Fully responsive (desktop, tablet, mobile)
-- Smooth Framer Motion reveal animations
 - Accessibility: heading hierarchy, alt text, focus states, form labels
 
 ## Run Locally
@@ -76,7 +101,7 @@ All images are sourced from **Pexels** under the free Pexels License. No copyrig
 
 - This is a **fictional demo** — no real company or client is represented
 - No fake testimonials, client logos, awards, or project completion claims
-- Project cards are clearly labeled as "Concept Project"
+- All project cards are clearly labeled as "Concept Project"
 - Contact form is frontend-only (no data is sent anywhere)
-- Yogesh Vadivel appears only in the footer disclaimer, README, metadata, and image credits
+- Yogesh Vadivel appears only in the footer disclaimer, README, metadata, contact FAQ, and image credits
 - The website is designed to look like a professional contractor company website, **not** a developer portfolio

@@ -21,8 +21,8 @@ export default function Statement() {
           </blockquote>
 
           <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-2xl mx-auto">
-            This fictional contractor website concept shows how a construction
-            business can communicate trust before the first site visit.
+            From residential renovations to commercial fit-outs, we bring
+            structure and accountability to every stage of the process.
           </p>
 
           {/* Bronze divider */}
